@@ -1,0 +1,56 @@
+Para salir del vim presionar dos veces esc, poner dos puntos q y enter en caso que no se haya guardado hacer lo mismo pero agregando “!” .
+Modos dependiendo del contexto los usaremos.
+H mover derecha
+L mover izquierda
+J mover abajo
+K mover arriba
+W mover al comienzo de la palabra siguiente
+B mover al comienzo de la palabra anterior
+E mover final de la palabra
+I para insertar texto, doble esc cuando terminas de editar
+Se usa i para cambiar de modo normal a modo insert
+Se usa i para editar antes y se usa a para editar después
+Se puede usar A para editar al final de una palabra
+Eliminamos caracteres presionando x
+Para guardar se utiliza :w (en el modo normal)
+Para guardar y salir se utiliza :wq (en el modo normal)
+Seleccionar palabra presionar (g d) para ir a la definición
+Seleccionar palabra presionar (g f) navega hacia la definición
+Retroceder en el historial ctrl+o
+Avanzar en el historial ctrl+i
+Comando para eliminar d+w
+Comando para eliminar una línea sin eliminar la línea d+$
+comando para deshacer u
+movimientos con operadores combinaciones
+d+w
+d+e
+d+b
+d+$
+eliminar una cantidad de caracteres presionando d + cantidad que eliminara + w
+eliminar y mantener dentro del clipboard (portapapeles)
+presionar d dos veces elimina la línea completamente
+pegar con la p
+eliminar no existe, existe cortar
+comando para remplazar presionar r sobre el carácter que quiero remplazar luego ingresar el carácter que quiera
+operador de cambio c+w
+operador de cambio para remplazar una palbra c+i+w y esc
+saltos del cursor
+para saber en que línea estoy ctril+g
+para ir al comienzo del archivo g+g
+para ir al final del archivo presionar G
+para ir a una línea deseada escribir numero de la línea + G
+para buscar del cursor en adelante presionar / + palabra o caracteres a busar
+para buscar del cursor hacia atrás presionar ? + palabra o caracteres a buscar
+para movernos entre resultados de búsqueda presionar n y para retroceder presionar N
+saltar de paréntesis en paréntesis
+presionar shift+5
+remplazar texto que se encuentra en una línea
+comando de sustituir ingresar  :s/cadena de caracteres a sustituir/nueva cadena (este solo remplaza el primero)
+para sustituir de toda una línea   :s/cadena de caracteres a sustituir/nueva cadena/g
+(solo funciona para la línea en la que esta el cursor)
+Abrir una nueva línea presionar o
+(para crear una nueva línea sobre el cursor presionar O)
+Para copiar y pegar
+Para esto tenemos que cambiar a modo visual para cambiar presionar v moverse asta donde quieres copiar (se puede eliminar con la x o el de copiar presionando y)
+Esta saca del modo anterior nos movemos a una línea y apretamos p o P
+

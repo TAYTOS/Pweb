@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="barra">
+            <h1>SEARCH</h1>
+            <ul>
+                <li><a class="link_barra" href="busqueda.html">Busqueda Normal</a></li>
+                <li><a class="link_barra" href="busquedaimagenes.html">Buscar imagenes</a></li>
+                <li><a class="link_barra" href="busquedaavanzada.html">Busqueda avanzada</a></li>
+            </ul>
+        </dic>
+    </header>
+    <main>
+        <div>
+            <form action="../cgi-bin/busquedaavanzada.pl" method="GET">
+                <table> 
+                    <tr> 
+                        <th>Incluir palabras: </th>  
+                        <th><input type="text" name = "include" autocomplete="off" required> <th>
+                    </tr>
+                    <tr>
+                        <th>Incluir palabra o frase exacta: </th>
+                        <th><input type="text" name = "exact" autocomplete="off"><th>
+                    </tr>
+                    <tr>
+                        <th>Excluir palabras: </th>
+                        <th><input type="text" name = "exclude" autocomplete="off"><th>
+                    </tr>
+                </table>
+                <input class="boton" type="submit" value = "Búsqueda en Google">
+    
+            </form>
+    
+        </div>  
+    </main>
+    
+    
+    
+</body>
+</html>

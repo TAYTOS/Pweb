@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel= "stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <script>
+            function cat(p1, char) {
+              return p1 + " " + char + " ";
+            }
+        </script>
+        <script>
+            function num(p1, char) {
+              return p1 + char ;
+            }
+        </script>
+        <div class = "container">
+            <form action="./cgi-bin/Calculador.pl" method="POST">
+                <table>
+                    <tr>
+                        <th colspan="4"><input type="text" name="exp" autocomplete="off" value="" required></th>
+                    </tr>
+                    <tr>
+                        <th><input type="button" value="7" onclick="exp.value = num(exp.value, value)"> </th>
+                        <th><input type="button" value="8" onclick="exp.value = num(exp.value, value)"> </th>
+                        <th><input type="button" value="9" onclick="exp.value = num(exp.value, value)"> </th>
+                        <th><input type="button" value="+" onclick="exp.value = cat(exp.value, value)"> </th>
+                    </tr>
+                    <tr>
+                        <th><input type="button" value="4" onclick="exp.value = num(exp.value, value)"> </th>
+                        <th><input type="button" value="5" onclick="exp.value = num(exp.value, value)"> </th>
+                        <th><input type="button" value="6" onclick="exp.value = num(exp.value, value)"> </th>
+                        <th><input type="button" value="-" onclick="exp.value = cat(exp.value, value)"></th>
+                    </tr>
+                    <tr>
+                        <th><input type="button" value="1" onclick="exp.value = num(exp.value, value)"> </th>
+                        <th><input type="button" value="2" onclick="exp.value = num(exp.value, value)"> </th>
+                        <th><input type="button" value="3" onclick="exp.value = num(exp.value, value)"> </th>
+                        <th><input type="button" value="*" onclick="exp.value = cat(exp.value, value)"></th>
+                    </tr>
+                    <tr>
+                        <th><input type="button" value="0" onclick="exp.value = num(exp.value, value)"> </th>
+                        <th><input type="button" value="/" onclick="exp.value = cat(exp.value, value)"></th>
+                        <th colspan="2"><input type="submit" value="="></th>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

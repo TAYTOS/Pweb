@@ -1,0 +1,140 @@
+/* Estilos para el contenedor principal */
+.contenedor {
+    margin: 50px; /* Margen exterior de 50px para el contenedor */
+    left: 50%; /* Alineación a la mitad del contenedor padre */
+    transform: translate(0%, -50%); /* Ajuste de posición para centrar verticalmente */
+    background: rgba(5, 7, 12, 0.40); /* Fondo con transparencia */
+}
+
+/* Estilos para los íconos de redes sociales */
+i {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    margin: 20px;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, .35); /* Sombra suave */
+    transition: .3s ease; /* Efecto de transición al pasar el mouse */
+}
+
+/* Cambio de color al pasar el mouse por los íconos de redes sociales */
+.fa-facebook:hover {
+    background-color: blue;
+    color: black;
+}
+.fa-youtube:hover {
+    background-color: red;
+    color: black;
+}
+.fa-instagram:hover {
+    background-color: rgb(221, 42, 123);
+    color: black;
+}
+.fa-github:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Estilos para la barra de navegación */
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+
+/* Estilos para el título y enlaces de la barra */
+h1 {
+    color: white;
+    font-size: 45px;
+}
+ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.link_barra {
+    color: white;
+    text-decoration: none;
+}
+.link_barra:hover {
+    color: aqua;
+}
+
+/* Estilos para el fondo del cuerpo */
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Estilos para diferentes secciones del contenido */
+.principal {
+    background-image: url(imagenes/fondo.jpg);
+}
+.colegio {
+    background-image: url(imagenes/colegio.JPG);
+}
+.familia {
+    background-image: url(imagenes/familia.jpeg);
+}
+.pasatiempos {
+    background-image: url(imagenes/pasatiempos.jpeg);
+}
+
+/* Estilos para el contenido general */
+.contenido {
+    padding: 8px;
+    background: rgba(5, 7, 12, 0.40);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para texto y encabezados */
+p {
+    color: white;
+}
+h2 {
+    color: white;
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para imágenes con texto asociado */
+.parrafo {
+    z-index: 1;
+    width: 700px;
+    padding: 20px 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.parrafo img {
+    width: 310px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 15px;
+}
+
+/* Estilos para el contenido específico de la sección de familia */
+.album {
+    display: flex;
+    justify-content: center;
+}
+.img_album {
+    width: 300px;
+    height: 250px;
+    margin: 10px 10px;
+}
