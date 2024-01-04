@@ -23,6 +23,7 @@ sub Search(){
     else{
         $Per = 0;
     }
+    
     if($Name ne ""){
         $param = 1;
         $Name = uc($Name);
@@ -30,17 +31,24 @@ sub Search(){
     else{
         $Name = "|";    
     }
+    
 
     if($param != 0){
         open(data,"../data/Programas\ de\ Universidades.csv") or die "no existe el archivo ._.";
         <data>;
+        
         while(my $line = <data>){
             chomp $line;
 
             if($csv->parse($line)){
                 $failed++;
                 @Uni = $csv->fields();
-                if($Uni[1] =~ $Name && $Uni[16] =~ $Prog  && $Uni[10] =~ $Dep && $Uni[4] =~ $Per){
+                if(
+                    ($Name ? $Uni[1] =~ /$Name/ : 1) && 
+                    ($Prog ? $Uni[16] =~ /$Prog/ : 1) &&
+                    ($Dep ?  $Uni[10] =~ $Dep : 1) &&
+                    ($Per ? $Uni[4] =~ $Per : 1)
+                ){
                     open(BoxHTML,"..\\box.html") or die print "no existe el archivo ._.";
                     while(my $l = <BoxHTML>){   
 
