@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busqueda de Universidades</title>
-    <link rel="stylesheet" href="./css/estilos.css">
+<!--xEstilosx-->        <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
     <header>
@@ -12,11 +13,11 @@
             <li><a href="#">Buscador Universidades </a></li>
         </ul>
     </header>
-    <div>
-        <div class="formulario">
-            <form action="./cgi-bin/busqueda.pl" method="post">
+    <div class="flex-container">
+        <div class="form-container">
+<!--xFormx-->         <form action="./cgi-bin/busqueda.pl" method="post">
                 <input type="text" name = "Name" autocomplete="off" class = "param" placeholder = "Nombre">
-                <input type="text" name = "Code" autocomplete="off" class = "param" placeholder = "Codigo">
+                <input type="text" name = "Periodo" autocomplete="off" class = "param" placeholder = "Periodo Licenciamiento">
                 <input type="text" name = "Department" autocomplete="off" class = "param" placeholder = "Departamento">
                 <input type="text" name = "Program" autocomplete="off" class = "param" placeholder = "Denominacion del programa">
                 
@@ -25,5 +26,6 @@
         </div>
 
     </div>
+<!--xSearchx-->
 </body>
 </html>

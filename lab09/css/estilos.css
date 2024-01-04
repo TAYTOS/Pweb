@@ -1,0 +1,90 @@
+/* Archivo estilos.css */
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Estilos para el contenedor principal */
+.flex-container {
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el formulario */
+.form-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.param {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/**/
+
+h3{
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-size: medium;
+    color:aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.contendor{
+    min-height: auto;
+    max-width: auto;
+    display: grid;
+    grid-template-columns: 4fr 2fr 4fr 2fr ;
+    color: azure;
+    align-items: center;
+    justify-content: center;
+    border: 100px;
+}
+
+.contendor .z{
+    border: black 5px solid;
+    background-color: rgb(73, 42, 165);
+    height: 100%;
+}
