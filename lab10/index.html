@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucador perliculas</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#">Buscador perliculas </a></li>
+        </ul>
+    </header>
+    <div class="flex-container">
+        <div class="form-container">
+                <form action="./cgi-bin/buscador.pl" method="post">
+                <input type="text" name = "year" autocomplete="off" class = "param" placeholder = "Año">
+
+                <input type="submit" value = "Buscar Peliculas">
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
